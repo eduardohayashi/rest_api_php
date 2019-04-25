@@ -15,7 +15,7 @@ composer install
 ```
 
 ## Configure 
-Open the .env file and input a valid database connection.
+Change the .env file and set a valid database connection.
 ```
 DATABASE_URL=mysql://user:password@127.0.0.1:3306/database
 ```
