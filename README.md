@@ -1,6 +1,10 @@
 # rest_api_php
 Simple REST API whith PHP/Symfony4
 
+## Requirements
+* PHP 7.1+
+* Composer
+* MySQL (local or remote)
 
 ## Install
 ```
