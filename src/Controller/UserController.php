@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use FOS\RestBundle\Controller\FOSRestController;
+use FOS\RestBundle\Controller\AbstractFOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use App\Entity\User;
@@ -14,7 +14,7 @@ use App\Form\UserType;
  * User controller.
  * @Route("/api", name="api_")
  */
-class UserController extends FOSRestController
+class UserController extends AbstractFOSRestController
 {
 
   /**
@@ -81,7 +81,7 @@ class UserController extends FOSRestController
 
     if (!$user) {
         throw $this->createNotFoundException(sprintf(
-            'No user found with the ID givven - "',
+            'No user found with the ID given - "',
             $userId
         ));
     }
